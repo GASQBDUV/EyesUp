@@ -1,5 +1,3 @@
-# EyesUP
-Quickly see what planes are above you right now.
 # Eyes Up - Real-Time Flight Scanner
 
 A simple yet powerful Python script that fetches and displays real-time flight data for a selected geographical area using the public OpenSky Network API.
@@ -45,3 +43,62 @@ Before running the script, you need to get free API credentials from the OpenSky
    Open your terminal or command prompt and run:
    ```bash
    pip install requests
+   ```
+
+3. **Set Environment Variables:**
+   This is the most critical step. You must set your API credentials as environment variables in the **same terminal session** where you will run the script.
+
+   * **On Windows (Command Prompt):**
+     ```cmd
+     set OPENSKY_CLIENT_ID=your_client_id_here
+     set OPENSKY_CLIENT_SECRET=your_client_secret_here
+     ```
+
+   * **On macOS or Linux (Terminal):**
+     ```bash
+     export OPENSKY_CLIENT_ID="your_client_id_here"
+     export OPENSKY_CLIENT_SECRET="your_client_secret_here"
+     ```
+   > **Note:** Replace `your_client_id_here` and `your_client_secret_here` with the actual credentials you obtained from OpenSky.
+
+4. **Run the Script:**
+   Navigate to the script's directory in your terminal and run it using Python.
+   ```bash
+   python EyesUp.py
+   ```
+   (You may need to use `python3` on macOS/Linux).
+
+5. **Follow On-Screen Instructions:**
+   The script will prompt you to select a geographical area. Enter the corresponding number and press Enter.
+
+## Example Output
+
+```
+[SUCCESS] Access Token retrieved successfully.
+
+[INFO] Searching for aircraft over Stockholm Area...
+------------------------------------------------------------
+[INFO] Found 12 aircraft:
+
+Callsign: RYR78P
+   - Origin Country: Ireland
+   - Status:         Descending (7.9 m/s)
+   - Baro Altitude:  3421 m
+   - Geo Altitude:   3581 m
+   - Velocity:       588 km/h
+   - Track:          166° (SSE)
+   - Last Update:    2025-07-20 14:30:00
+
+Callsign: SAS405
+   - Origin Country: Sweden
+   - Status:         Climbing (11.2 m/s)
+   - Baro Altitude:  6780 m
+   - Geo Altitude:   6919 m
+   - Velocity:       750 km/h
+   - Track:          271° (W)
+   - Last Update:    2025-07-20 14:30:01
+```
+
+## Data Source
+
+This project relies entirely on the fantastic, free, and open data provided by the [**OpenSky Network**](https://opensky-network.org). Please consider supporting their project or contributing data if you have a receiver.

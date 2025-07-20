@@ -33,11 +33,9 @@ HEADERS = {'User-Agent': 'EyesUp/1.0 (Python)'}
 # and another dictionary with the exact coordinates for the search box (lamin, lomin, etc.).
 # This structure makes it easy to add, remove, or change locations.
 LOCATIONS = {
-    "1": {"name": "Hulan, Lerum (local)", "coords": {"lamin": 57.76, "lomin": 12.26, "lamax": 57.78, "lomax": 12.29}},
-    "2": {"name": "Lerum Municipality (regional)", "coords": {"lamin": 57.65, "lomin": 12.10, "lamax": 57.90, "lomax": 12.50}},
-    "3": {"name": "Greater Gothenburg", "coords": {"lamin": 57.55, "lomin": 11.70, "lamax": 57.85, "lomax": 12.35}},
-    "4": {"name": "Västra Götaland County", "coords": {"lamin": 57.2, "lomin": 10.8, "lamax": 59.8, "lomax": 14.5}},
-    "5": {"name": "Stockholm Area", "coords": {"lamin": 59.10, "lomin": 17.70, "lamax": 59.70, "lomax": 18.80}}
+    "1": {"name": "Greater Gothenburg", "coords": {"lamin": 57.55, "lomin": 11.70, "lamax": 57.85, "lomax": 12.35}},
+    "2": {"name": "Västra Götaland County", "coords": {"lamin": 57.2, "lomin": 10.8, "lamax": 59.8, "lomax": 14.5}},
+    "3": {"name": "Stockholm Area", "coords": {"lamin": 59.10, "lomin": 17.70, "lamax": 59.70, "lomax": 18.80}}
 }
 
 # === STEP 3: HELPER FUNCTIONS ===
